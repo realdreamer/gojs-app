@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.loading-icon {
+  animation: spin 1s linear infinite;
+  opacity: .6;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

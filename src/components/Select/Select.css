@@ -1,0 +1,9 @@
+.react-select-container {
+  z-index: 99;
+  width: 200px;
+  text-align: left;
+}
+
+.emptyStateContainer {
+  padding: 10px;
+}
