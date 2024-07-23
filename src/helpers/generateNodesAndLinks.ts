@@ -14,18 +14,25 @@ type LinkData = {
   text: string;
 };
 
+const getRandomColor = (): string => {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
 export const generateNodesAndLinks = (numNodes: number = 100, randomLinks = false): { nodes: NodeData[]; links: LinkData[] } => {
   const nodes: NodeData[] = [];
   const links: LinkData[] = [];
   const sqrt = Math.floor(Math.sqrt(numNodes));
 
-  const colors = ["red", "green", "blue", "yellow", "orange", "purple"];
-
   for (let i = 0; i < numNodes; i++) {
     nodes.push({
       key: `nodeKey-${i}`,
       text: `Node ${i}`,
-      color: colors[i % colors.length],
+      color: getRandomColor(),
       bounds: new go.Rect((i % sqrt) * 140, Math.floor(i / sqrt) * 140, 70, 70),
     });
 
