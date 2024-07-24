@@ -2,7 +2,7 @@
 
 This application is built using Vite, React, and GoJS, with pnpm as the package manager.
 
-Live Demo: [GoJS Application](https://gojs-app-mohamed-ismail-s-as-projects.vercel.app/)
+Live Demo: [GoJS Application](https://gojs-app.vercel.app/)
 
 ## Installation
 
